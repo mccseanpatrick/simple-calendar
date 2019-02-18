@@ -23,6 +23,6 @@
 .calendar-item{
     flex: 1;
     display: flex;
-    justify-content: center;
     border: 1px solid black;
+    flex-direction: column;
 }

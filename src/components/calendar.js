@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/calendar.css"
+import Schedule from './schedule';
 
 class Calendar extends React.Component{
     constructor(props){
@@ -62,12 +63,14 @@ const CalendarItem = (props) => {
         return (
             <div className="calendar-item" style={{backgroundColor:"#00ff00"}}>
                 <h1>{props.date.toLocaleString('en-us', options)}</h1>
+                <Schedule/>
             </div>
         )
     }
     return (
         <div className="calendar-item">
             <h1>{props.date.toLocaleString('en-us', options)}</h1>
+            <Schedule/>
         </div>
     )
 }
